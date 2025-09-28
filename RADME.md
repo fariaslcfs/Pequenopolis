@@ -1,0 +1,1 @@
+### App pra verificar alterações no site da PMSJ. site: https://www.sjc.sp.gov.br/servicos/educacao-e-cidadania/educacao-infantil/
