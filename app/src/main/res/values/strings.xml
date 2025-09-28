@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EscolaLuizinho</string>
+    <string name="iniciar_monitoramento">Iniciar monitoramento</string>
+    <string name="parar_monitoramento">Parar monitoramento</string>
+    <string name="intervalo_minutos">Insira o intervalo em minutos</string>
+    <string name="status_aguardando">Status: aguardando…</string>
+    <string name="url_para_monitorar">URL para monitorar</string>
+    <string name="texto_explicativo">Este app monitora alterações no site do Pequenópolis. Quando detectar mudanças (deve poder fazer matrícula agora), você será avisado com uma notificação e um som irritante.</string>
+    <string name="site_para_monitorar">Insira o site para monitorar</string>
+    <string name="parar_monitoramento_3">Parar monitoramento</string>
+    <string name="site">Site</string>
+    <string name="intervalo_em_minutos">Intervalo em minutos</string>
+    <string name="bipe_continuo">Alarme contínuo</string>
+</resources>
