@@ -20,7 +20,7 @@
             android:text="@string/texto_explicativo"
             android:textSize="18sp"
             android:lineSpacingExtra="4dp"
-            android:fontFamily="@font/font9"
+            android:fontFamily="@font/font1"
             android:textColor="#263238" />
 
 
