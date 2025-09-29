@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+<!--    android:background="#DDBFE4F2">-->
 
     <LinearLayout
         android:orientation="vertical"
@@ -39,15 +40,16 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
+        <!-- Rótulo para intervalo -->
+
         <EditText
             android:id="@+id/edtUrl"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:backgroundTint="#FEF8F4F4"
             android:gravity="clip_vertical"
             android:hint="@string/site_para_monitorar"
             android:inputType="textUri" />
-
-        <!-- Rótulo para intervalo -->
 
         <View
             android:id="@+id/divider"
@@ -72,6 +74,7 @@
             android:id="@+id/edtInterval"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:backgroundTint="#FEF8F4F4"
             android:gravity="clip_vertical"
             android:hint="@string/intervalo_minutos"
             android:inputType="number" />
