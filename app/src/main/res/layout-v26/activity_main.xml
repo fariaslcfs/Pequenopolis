@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<!--    android:background="#DDBFE4F2">-->
+    android:layout_height="match_parent"
+    android:background="#ECEFF1">
 
     <LinearLayout
         android:orientation="vertical"
@@ -13,98 +13,110 @@
         <!-- Texto explicativo -->
         <TextView
             android:id="@+id/tvDescription"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:justificationMode="inter_word"
             android:text="@string/texto_explicativo"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="18sp"
+            android:lineSpacingExtra="4dp"
+            android:fontFamily="@font/font9"
+            android:textColor="#263238" />
+
+
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#42A5F5"
+            android:layout_marginBottom="16dp"/>
 
         <!-- Rótulo para o site -->
-        <View
-            android:id="@+id/divider4"
-            android:layout_width="match_parent"
-            android:layout_height="21dp"
-            android:background="?android:attr/listDivider"
-            android:backgroundTint="#FFFFFFFF" />
-
         <TextView
             android:id="@+id/tvUrlLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
+            android:layout_marginBottom="8dp"
             android:gravity="center"
             android:text="@string/site"
-            android:textAlignment="gravity"
-            android:textSize="20sp"
+            android:textSize="17sp"
+            android:textColor="#1E88E5"
             android:textStyle="bold" />
 
-        <!-- Rótulo para intervalo -->
-
+        <!-- Campo do site -->
         <EditText
             android:id="@+id/edtUrl"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:backgroundTint="#FEF8F4F4"
-            android:gravity="clip_vertical"
+            android:background="@drawable/bg_edittext"
+            android:padding="12dp"
             android:hint="@string/site_para_monitorar"
-            android:inputType="textUri" />
+            android:inputType="textUri"
+            android:textColor="#212121"
+            android:textColorHint="#9E9E9E" />
 
+        <!-- Divider -->
         <View
-            android:id="@+id/divider"
             android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:background="?android:attr/listDivider"
-            android:backgroundTint="#FFFFFFFF" />
+            android:layout_height="1dp"
+            android:background="#B3E5FC"
+            android:layout_marginVertical="20dp"/>
 
+        <!-- Rótulo para intervalo -->
         <TextView
             android:id="@+id/tvIntervalLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="4dp"
+            android:layout_marginBottom="8dp"
             android:gravity="center"
             android:text="@string/intervalo_em_minutos"
-            android:textAlignment="gravity"
-            android:textSize="20sp"
+            android:textSize="17sp"
+            android:textColor="#1E88E5"
             android:textStyle="bold" />
 
+        <!-- Campo intervalo -->
         <EditText
             android:id="@+id/edtInterval"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:backgroundTint="#FEF8F4F4"
-            android:gravity="clip_vertical"
+            android:background="@drawable/bg_edittext"
+            android:padding="12dp"
             android:hint="@string/intervalo_minutos"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textColor="#212121"
+            android:textColorHint="#9E9E9E" />
 
-        <View
-            android:id="@+id/divider2"
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:background="?android:attr/listDivider"
-            android:backgroundTint="#FFFFFFFF" />
-
+        <!-- Checkbox -->
         <CheckBox
             android:id="@+id/chkContinuousBeep"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/bipe_continuo"/>
+            android:layout_marginTop="20dp"
+            android:text="@string/bipe_continuo"
+            android:textColor="#37474F" />
 
+        <!-- Botão com gradiente -->
         <Button
             android:id="@+id/btnStartStop"
             android:layout_width="match_parent"
-            android:layout_height="107dp"
-            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:padding="16dp"
             android:text="@string/iniciar_monitoramento"
-            android:textSize="25sp" />
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_button" />
 
-        <View
-            android:id="@+id/divider3"
+        <ImageView
+            android:id="@+id/imgIllustration"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="?android:attr/listDivider" />
+            android:layout_height="139dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/luizinho" />
 
     </LinearLayout>
 </ScrollView>
