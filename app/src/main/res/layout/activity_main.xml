@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Texto explicativo -->
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:justificationMode="inter_word"
+            android:text="@string/texto_explicativo"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Rótulo para o site -->
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="#FFFFFFFF" />
+
+        <TextView
+            android:id="@+id/tvUrlLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:text="@string/site"
+            android:textAlignment="gravity"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtUrl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="clip_vertical"
+            android:hint="@string/site_para_monitorar"
+            android:inputType="textUri" />
+
+        <!-- Rótulo para intervalo -->
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="#FFFFFFFF" />
+
+        <TextView
+            android:id="@+id/tvIntervalLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:text="@string/intervalo_em_minutos"
+            android:textAlignment="gravity"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtInterval"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="clip_vertical"
+            android:hint="@string/intervalo_minutos"
+            android:inputType="number" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="#FFFFFFFF" />
+
+        <CheckBox
+            android:id="@+id/chkContinuousBeep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bipe_continuo"/>
+
+        <Button
+            android:id="@+id/btnStartStop"
+            android:layout_width="match_parent"
+            android:layout_height="107dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/iniciar_monitoramento"
+            android:textSize="25sp" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+    </LinearLayout>
+</ScrollView>
